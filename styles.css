@@ -1,0 +1,106 @@
+/* Genel Ayarlar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(262deg, #42776e, #4a4788, #adb45a, #97977f);
+  background-size: 240% 240%;
+  animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Kart Tasarımı */
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Giriş ve Skorlar */
+#username {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+#user-scores {
+  list-style: none;
+  padding: 0;
+}
+
+#user-scores li {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+/* Butonlar */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+
+/* Sorular ve Şıklar */
+#choices {
+  list-style: none;
+  padding: 0;
+}
+
+#choices li {
+  text-align: left;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.correct {
+  background-color: green;
+  color: white;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+}

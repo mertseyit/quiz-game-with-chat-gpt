@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Uygulaması</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="gradient-background">
+  <div id="app">
+    <!-- Başlangıç Ekranı -->
+    <div id="start-screen" class="card">
+      <h1>Test Uygulaması</h1>
+      <input type="text" id="username" placeholder="Kullanıcı adınızı girin">
+      <button id="start-button">Başla</button>
+      <h2>Diğer Kullanıcı Skorları</h2>
+      <ul id="user-scores"></ul>
+    </div>
+
+    <!-- Oyun Ekranı -->
+    <div id="quiz-screen" class="card hidden">
+      <p>Kalan Süre: <span id="timer-text">5:00</span></p>
+      <h2 id="question-title"></h2>
+      <ul id="choices"></ul>
+      <button id="next-button" class="hidden">Sonraki Soru</button>
+      <button id="finish-button" class="hidden">Testi Bitir</button>
+    </div>
+
+    <!-- Sonuç Ekranı -->
+    <div id="result-screen" class="card hidden">
+      <h2>Test Bitti!</h2>
+      <p id="score-text"></p>
+      <button id="restart-button">Yeniden Dene</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
